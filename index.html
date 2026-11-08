@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faris Store | E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">FARIS<span>STORE.</span></a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <button id="logoutBtn" class="hidden">Logout</button>
+    </nav>
+</header>
+
+<main>
+    <section id="loginPage" class="login-container">
+        <div class="hero">
+            <p class="eyebrow">EVERYDAY ESSENTIALS</p>
+            <h1>Find your<br><span>everyday</span> thing.</h1>
+            <p>A simple shopping experience designed for everyone.</p>
+        </div>
+
+        <form id="loginForm" class="login-card">
+            <p class="eyebrow">WELCOME BACK</p>
+            <h2>Sign In</h2>
+            <p class="description">Enter your account details.</p>
+
+            <label>Username</label>
+            <input type="text" id="username" placeholder="Enter username" required>
+
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+
+            <p id="errorMessage"></p>
+
+            <button type="submit" class="primary-btn">Sign In →</button>
+
+            <p class="demo">Demo account: faris / store123</p>
+        </form>
+    </section>
+
+    <section id="homePage" class="hidden">
+        <div class="welcome">
+            <p class="eyebrow">FARIS STORE COLLECTION</p>
+            <h1>Welcome, <span id="userName"></span>!</h1>
+            <p>Discover our latest everyday essentials.</p>
+        </div>
+
+        <div class="products" id="products">
+
+            <article class="product-card">
+                <div class="product-image image-one">01</div>
+                <p>DAILY CARRY</p>
+                <h3>Everyday Backpack</h3>
+                <h4>Rp 349.000</h4>
+                <button class="add-btn">Add to Bag</button>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image image-two">02</div>
+                <p>TECH ACCESSORIES</p>
+                <h3>Studio Headphones</h3>
+                <h4>Rp 599.000</h4>
+                <button class="add-btn">Add to Bag</button>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image image-three">03</div>
+                <p>DAILY ESSENTIALS</p>
+                <h3>Minimal Watch</h3>
+                <h4>Rp 429.000</h4>
+                <button class="add-btn">Add to Bag</button>
+            </article>
+
+        </div>
+
+        <p id="cartMessage"></p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 FARIS STORE</p>
+    <p>PERSONAL FRONT-END PROJECT</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

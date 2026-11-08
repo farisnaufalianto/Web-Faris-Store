@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f2ed;
+    color: #171916;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    height: 80px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #171916;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #759d36;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: #171916;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.login-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+    min-height: 550px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #789d40;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 7vw, 90px);
+    line-height: 1;
+    margin: 25px 0;
+    letter-spacing: -4px;
+}
+
+.hero h1 span {
+    color: #759d36;
+}
+
+.hero p:last-child {
+    color: #777;
+    line-height: 1.8;
+    max-width: 380px;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border: 1px solid #ddd;
+}
+
+.login-card h2 {
+    font-size: 35px;
+    margin: 15px 0 5px;
+}
+
+.description {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 18px 0 8px;
+}
+
+input {
+    width: 100%;
+    height: 48px;
+    padding: 0 13px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+input:focus {
+    border-color: #759d36;
+}
+
+.primary-btn {
+    width: 100%;
+    height: 50px;
+    background: #171916;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #759d36;
+}
+
+.demo {
+    font-size: 11px;
+    color: #888;
+    margin-top: 20px;
+}
+
+#errorMessage {
+    color: #c0392b;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.welcome {
+    margin-bottom: 45px;
+}
+
+.welcome h1 {
+    font-size: clamp(40px, 6vw, 65px);
+    margin: 15px 0;
+}
+
+.welcome h1 span {
+    color: #759d36;
+}
+
+.welcome p:last-child {
+    color: #777;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+}
+
+.product-image {
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.image-one {
+    background: #d8e3ca;
+}
+
+.image-two {
+    background: #d9dce2;
+}
+
+.image-three {
+    background: #e8dfcf;
+}
+
+.product-card > p {
+    font-size: 10px;
+    color: #789d40;
+    margin-top: 20px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card h4 {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #171916;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #171916;
+    color: white;
+}
+
+#cartMessage {
+    margin-top: 20px;
+    color: #759d36;
+    font-size: 13px;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 0 5%;
+    }
+
+    main {
+        padding: 45px 20px;
+    }
+
+    .login-card {
+        padding: 25px;
+    }
+}
